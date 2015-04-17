@@ -1,0 +1,50 @@
+					/**** Generic Classes ****/
+/*used colourlovers palettes*/
+html {
+	font-family: Tahoma, Verdana;
+	background-color: #F0F4E6;
+}
+
+					/** Main-Title **/
+#chagers {
+	margin-top: .1em;
+	margin-left: 0;
+}
+
+/*unvisited link*/
+a:link {
+	text-decoration: none;
+	color: #33454E;
+}
+/*visited link*/
+a:visited {
+	color: #9E9C71;
+}
+/*hover over link*/
+a:hover {
+	color: #242739;
+}
+
+h1 {
+	color: #3F6E82;
+	margin-top: 3em;
+	margin-left: 25%;
+}
+
+h2 {
+	color: #71ACA3;
+	margin-left: 35%;
+}
+
+h3 {
+	color: #5E8B6E;
+	margin-left: 45%;
+}
+
+					/* Section-Content */
+section {
+	color: #1B2035;
+	text-align: justify;
+	margin-left: 25%;
+	margin-right: 25%;
+}
