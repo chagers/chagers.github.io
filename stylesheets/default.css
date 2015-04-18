@@ -1,0 +1,94 @@
+					/*Generic*/
+html {
+    background: #F0F9F2;
+    color: #28230E;
+}
+a:link {
+	text-decoration: none;
+	color: #B23318;
+}
+a:hover {
+	font-style: italic;
+}
+a:visited {
+	color: #718A6B;
+}
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 150%;
+}
+
+					/*Main Content*/
+.anchor {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    padding-bottom: .25em;
+}
+.anchor a:link {
+    text-decoration: none;
+    color: #28230E;
+}
+.anchor a:visited {
+    text-decoration: none;
+    color: #734B1A;
+}
+.anchor a:hover {
+    font-style: italic;
+}
+.about {
+    display: inline;
+}
+.about figure {
+	display: inline;
+}
+
+.about .blurb {
+	display: inline;
+	margin-left: 1em;
+	margin-right: 10%;
+	float: right;
+	position: absolute;
+}
+
+#line {
+	width: 100%;
+  	height: 4px;
+  	background: #734B1A;
+  	clear: both;
+  	margin-top: 15px;
+  	margin-bottom: 12px;
+}
+
+aside {
+	float: right;
+	width: 300px;
+}
+
+section .projects {
+	width: 500px;
+}
+
+
+					/*Footer*/
+nav ul li {
+	display: inline;
+	clear: none;
+}
+nav {
+	text-align: center;
+	padding-top: .25em;
+}
+#line2 {
+	width: 100%;
+  	height: 4px;
+  	background: #718A6B;
+  	clear: both;
+  	margin-top: 15px;
+  	margin-bottom: 12px;	
+}

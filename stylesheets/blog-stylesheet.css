@@ -1,8 +1,8 @@
 					/**** Generic Classes ****/
 /*used colourlovers palettes*/
 html {
-	font-family: Tahoma, Verdana;
-	background-color: #F0F4E6;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #F0F9F2;
 }
 
 					/** Main-Title **/
@@ -10,21 +10,18 @@ html {
 	margin-top: .1em;
 	margin-left: 0;
 	text-align: left;
+	font-family: 'Pacifico', cursive;
 }
 
-/*unvisited link*/
 a:link {
 	text-decoration: none;
-	color: #33454E;
+	color: #B23318;
 }
-/*visited link*/
-a:visited {
-	color: #9E9C71;
-}
-/*hover over link*/
 a:hover {
-	color: #242739;
 	font-style: italic;
+}
+a:visited {
+	color: #718A6B;
 }
 
 h1 {
@@ -48,8 +45,8 @@ h3 {
 
 					/* Section-Content */
 section {
-	color: #1B2035;
+	color: #28230;
 	text-align: justify;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
