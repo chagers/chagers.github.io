@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <title>chagers' blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1 id="chagers">
+    <a href="https://chagers.github.io">chagers</a>
+  </h1>
+  <h1>CSS Positioning</h1>
+  <h2>What's the deal with SRAF? (Or, rather: Static, Relative, Absolute and Fixed positions)</h2>
+  <h3>04.17.15</h3>
+  <section>
+    <p>
+      Within CSS, positioning allows you to control where things are laid out on the webpage. There are a few different positioning states that your webpage elements can be in that will affect the layout: static, 
+      Relative, Absolute and Fixed. It makes sense to think of them in this order because static is the least restrictive and fixed is the most restrictive in terms of what the position selector does to an element's placing and interaction with other elements on a webpage. In Jon Duckett's book "HTML&amp;CSS design and build websites" he refers to positioning in terms of flow on a webpage. This could be another helpful way to think about webpage layouts.
+    </p>
+    <p>
+    	Every element exists in the static position when it's added to a webpage. This basically means that if no positions are designated for elements on a page, they'll naturally flow one after another in a column. A webpage with all elements in the static position would flow normally.
+    </p>
+    <p>
+    	Relative positioning is one step up from static. Once an element is assigned a relative position, it can be moved around relative to its static position. This means that if a relatively positioned element is moved up 5 pixels, the point it moves up from is not the top or bottom of the webpage, but where it normally would have been if no positions were assigned (static position). Relative positioning does not affect the position of surrounding elements, either.
+    </p>
+    <p>
+    	Absolute positioning is a step up from relative. When an element is assigned an absolute position, it moves based upon the element in which it lies. For example, if the element that is assigned a relative position just lies within the main webpage element, then it could be moved anywhere within that webpage, regardless of other elements in the webpage. In fact, the other elements in the webpage aren't affected by an absolutely positioned element at all, and they just ignore its existence. This also means that if you have an absolutely positioned element, it will stay where it is when you scroll around on a webpage. (Think about the little map in yelp that follows you as you scroll down a list of restaurants.)
+    </p>
+    <p>
+    	Finally, fixed positioning positions an element relative to the web browser itself. So, when an element is in the fixed position, it will not move at all with the page, and just stays in the same spot. If you were to scroll up and down a webpage, it would just stay where it is, and the other elements would go right over it. In fact, if you had a small browser open, and there was a fixed element further down the page than your browser showed, you may not even know it was there because there would be no scroll bar.
+    </p>
+    <p>
+    	There you have it - a brief description of CSS positioning. If it helps even in the slightest, then I will consider this post a success. Live long and code! #nerd 
+    </p>
+  </section>
+</main>
+
