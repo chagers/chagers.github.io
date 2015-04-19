@@ -7,11 +7,11 @@ a:link {
 	text-decoration: none;
 	color: #B23318;
 }
-a:hover {
-	font-style: italic;
-}
 a:visited {
 	color: #718A6B;
+}
+a:hover {
+	font-style: italic;
 }
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -41,38 +41,48 @@ h2 {
 .anchor a:hover {
     font-style: italic;
 }
-.about {
-    display: inline;
-}
-.about figure {
-	display: inline;
+.about figure, .blurb {
+    display: inline-block;
 }
 
 .about .blurb {
-	display: inline;
 	margin-left: 1em;
 	margin-right: 10%;
 	float: right;
 	position: absolute;
 }
+.blurb header p {
+	min-width: 300px;
+}
 
 #line {
 	width: 100%;
   	height: 4px;
-  	background: #734B1A;
+  	background: #718A6B;
   	clear: both;
   	margin-top: 15px;
   	margin-bottom: 12px;
 }
 
+
+table.projects {
+	width: 700px;
+	top: 500px;
+	margin-bottom: 2em;
+}
 aside {
-	float: right;
-	width: 300px;
+	position: absolute;
+	top: 500px;
+	left: 800px;
+	width: 250px;
+}
+.blog h2 a:link{
+	color: #28230E;
+}
+.blog h2 a:visited{
+	color: #28230E;
 }
 
-section .projects {
-	width: 500px;
-}
 
 
 					/*Footer*/
@@ -83,11 +93,12 @@ nav ul li {
 nav {
 	text-align: center;
 	padding-top: .25em;
+	letter-spacing: .1em;
 }
 #line2 {
 	width: 100%;
   	height: 4px;
-  	background: #718A6B;
+  	background: #B23318;
   	clear: both;
   	margin-top: 15px;
   	margin-bottom: 12px;	
