@@ -45,8 +45,8 @@ h2 {
     display: inline-block;
 }
 
-.about .blurb {
-	margin-left: 1em;
+.blurb {
+	margin-left: 10%;
 	margin-right: 10%;
 	float: right;
 	position: absolute;
