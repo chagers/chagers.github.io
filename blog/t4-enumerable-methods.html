@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>chagers' blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t4-stylesheet.css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+</head>
+
+<main>
+  <h1 id="chagers">
+    <a href="https://chagers.github.io">chagers</a>
+  </h1>
+  <h1>The Enumerable Method: <code>cycle</code></h1>
+  <h2>Say that again?</h2>
+  <h3>05.01.15</h3>
+  <section>
+    <p>
+      Today I'll be talking about the Enumerable method called <code>cycle</code>. Ruby Docs provides the following documentation on this method:
+    </p>
+    	<figure>
+    		<img src="..\images\enumerable-cycle-def.png" alt="Ruby Docs Definition">
+    	</figure>
+    <p>
+    	Pretty dry explanation, right? Let's see if we can make it a bit more understandable and applicable. <a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/">Global Nerdy</a> gives a great and simple definition for the cycle method:
+    </p>
+    	<blockquote>
+    		Given a collection, [<code>Enumerable#cycle</code>] creates an infinitely-repeating ordered source of its items.
+    	</blockquote>
+    <p>
+    	So, now that we get what the <code>cycle</code> method will do. Why would we want to use it? Well, say you have a list of household chores that you want to assign to all your household members. Ok, let's say you live in a huge house with a lot of roommates and you just don't want to manually write this list out. You also want to give everyone a day of the week to complete their chore so they stay on top of it. <code>Enumerable#cycle</code> can help you!
+    </p>
+    <p>
+    	First, we'll want to create our lists of chores, days and roommates, and call the <code>cycle</code> method on them so we can cycle through them later as we write our assign method:
+    </p>
+    	<figure>
+    		<img src="..\images\enumerable-cycle-example-lists.png" alt="Lists">
+    	</figure>
+    <p>
+    	Now, let's cycle through the lists 10 times while assigning each roommate a day and a chore since we've got 10 chores in our house. To do this we'll use the <code>next</code> method to iterate through the lists one element at a time to assign days and chores (which, by the way, only works since we so handily created our lists with the <code>cycle</code> method on them in step 1!)
+    </p>
+    	<figure>
+    		<img src="..\images\enumerable-cycle-example-code.png" alt="Code">
+    	</figure>
+    <p>
+    	Now, we've got a handy list of which roommate will need to do which chore on which day:
+    </p>
+    	<figure>
+    		<img src="..\images\enumerable-cycle-example-output.png" alt="Output">
+    	</figure>
+    <p>
+    	Unfortunately, there are some roommates that will be doing two chores and others only doing one! But we'll leave that to the next house meeting. I'm sure the housemates can think of some way to make this work equally (as I'm sure you the reader has already figured out!)
+    </p>
+    <p>
+    	Hopefully this example has given you a better idea of how and why you'd use the <code>Enumerable#cycle</code> method. Now go have fun and code!
+    </p>
+  </section>
+
+<div id="line2"></div>
+  <footer>
+    <nav>
+      <ul>
+        <li>|</li>
+        <li><a href="http://chagers.github.io">home</a></li>
+        <li>|</li>
+        <li><a href="http://chagers.github.io/blog-index.html">blog</a></li>
+        <li>|</li>
+      </ul>
+    </nav>
+  </footer> 
+</main>
