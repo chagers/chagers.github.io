@@ -1,0 +1,33 @@
+span {
+	font-weight: bold;
+}
+
+.quote {
+	margin: 2em 10%;
+}
+
+.midquote {
+	font-style: oblique;
+}
+
+.midquote a:link {
+	text-decoration: none;
+	color: #B23318;
+}
+
+.midquote a:hover {
+	font-style: normal;
+}
+
+.midquote a:visited {
+	color: #718A6B;
+}
+
+.list {
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+.wordle {
+	text-align: center;
+}
