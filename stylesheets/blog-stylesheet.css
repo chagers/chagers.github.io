@@ -5,6 +5,12 @@ html {
 	background-color: #F0F9F2;
 }
 
+code {
+		font-size: 110%;
+		background: #E8E6ED;
+		padding: 0 .4% 0 .4%;
+}
+
 
 
 					/** Main-Title **/
