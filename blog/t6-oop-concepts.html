@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <title>chagers' blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t6-oop-concepts.css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+</head>
+
+<main>
+  <h1 id="chagers">
+    <a href="https://chagers.github.io">chagers</a>
+  </h1>
+  <h1>Procs, Lambdas, Blocks, and a Cooking Robot</h1>
+  <h2>Wait... What?</h2>
+  <h3>05.17.15</h3>
+  <section>
+    <p>
+      In today's tech blog I will be talking about what <code>procs</code>, <code>lamdas</code> and Blocks are, and how they are related with a little help from a cooking robot friend.
+    </p>
+    <p>
+    	First, let's look at what each of these are:
+    	<ul>
+    		<li>
+    			<code>Procs</code> (short for Procedures) are objects.
+    		</li>
+    		<li>
+    			<code>Lambdas</code> are objects.
+    		</li>
+    		<li>
+    			Blocks are <span>syntax</span>.
+    		</li>
+    	</ul>
+    </p>
+    <p>
+    	Wait, what? I thought everything in Ruby was an object! Nope, not this time. But... by using <code>procs</code> and <code>lambdas</code> we can turn code block into an object. Oh clever Ruby.
+    </p>
+    <p>
+    	Next, let's look at what each of these are made of:
+    	<ul>
+    		<li>
+  				<code>Procs</code> take in code block to define what that proc will do when it's called.
+  				<ul>
+  					<li>
+							So.. Say we had a cooking robot, and all we had to do was give it a recipe and it would know how to execute the dish. Defining a proc would be like saving our favorite recipe for chicken vesuvio in the cooking robot, simply calling out "chicken vesuvio" and cooking robot would know what to start cooking! Yum.
+  					</li>
+  				</ul>
+    		</li>
+    		<li>
+    			<code>Lambdas</code> exist in the <code>Proc</code> class, and also take code block to define what the lambda will do when it's called.
+    			<ul>
+    				<li>
+							So.. You're probably thinking, well ok same thing.. Why the different name? We'll look more at that in the following section.
+    				</li>
+    			</ul>
+    		</li>
+    		<li>
+  				Blocks are made up of syntax that tells methods, <code>procs</code>, <code>lambdas</code>, loops, etc. what to do.
+  				<ul>
+  					<li>
+  						If we're still thinking along the lines of our cooking robot example, a block would represent the recipe for chicken vesuvio.
+  					</li>
+  				</ul>
+    		</li>
+    	</ul>
+    </p>
+    <p>
+    	Now, what good are they?
+    	<ul>
+    		<li>
+		    	As we've already seen above, <code>procs</code> and lamdas comprised of code block make excellent shortcuts to running specific tasks - like recipes for the cooking robot.
+		    </li>
+		    <li>
+		    	But what is the difference between a proc and a lambda? Well this is where it gets a bit trickier:
+		    	<ul>
+		    		<li>
+		    			Say we wanted to give our cooking robot a recipe for cinnamon rolls. In this particular recipe, there is a sub-recipe for the rolls themselves, and another for the frosting. What would happen if we created both of these recipes as <code>procs</code>?
+		    		</li>
+		    		<li>
+		    			Well, if both were <code>procs</code>, and we indicated that we wanted to return the results after each sub-recipe was complete to check the progress, we'd get some unintended results. Using return with a proc would mean that the cooking robot would exit the entire recipe at whatever point return was used. Which may very well mean we'd get rolls without frosting! Well, that's no good. How can we fix this? Well, by using <code>lambdas</code>, of course (I know that's what you already guessed).
+		    		</li>
+		    		<li>
+		    			If we were to write the rolls and icing recipes as lamdas, we could use return on those and the cooking robot would return the recipes at that moment in time before it continued on its merry way to finishing the entire cinnamon roll recipe. This would allow us to check in, but would not stop the robot from completing the (very important) tasks at hand.
+		    		</li>
+		    	</ul>
+		    </li>
+    	</ul>
+    </p>
+    <p>
+    	In review:
+    	<ul>
+    		<li>
+    			<code>Procs</code> and <code>lambdas</code> are saved snippets of code block for later use.
+    		</li>
+    		<li>
+    			Using return on <code>procs</code> means exiting from its code block as well as the method that contains the proc. (Like making cinnamon rolls without frosting.)
+    		</li>
+    		<li>
+    			Using return on <code>lambdas</code> means exiting from its code block but giving control back to the method to continue execution. (Like pausing to taste the frosting, but continuing on to create the finished product.)
+    		</li>
+    	</ul>
+    </p>
+    <p>
+    	So - there you have it. The classic cooking robot example to give a little bit more insight into the differences between <code>procs</code> and <code>lambdas</code>, and how code block relates to (and creates!) them. Now, off to cook up some more code.
+    </p>
+    <figure>
+    	<img src="../images/Cooking-Robot.png">
+    </figure>
+  </section>
+
+<div id="line2"></div>
+  <footer>
+    <nav>
+      <ul>
+        <li>|</li>
+        <li><a href="http://chagers.github.io">home</a></li>
+        <li>|</li>
+        <li><a href="http://chagers.github.io/blog-index.html">blog</a></li>
+        <li>|</li>
+      </ul>
+    </nav>
+  </footer> 
+</main>

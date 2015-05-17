@@ -1,0 +1,26 @@
+span {
+	font-style: italic;
+}
+
+/*ul {
+  margin-left: 0;
+  padding-left: 2em;
+  list-style-type: none;
+}*/
+
+/*li {
+  position: relative;
+  margin-left: 1em;
+}
+
+li:before {
+  position: absolute;
+  left: -1em;
+  content: "~";
+}*/
+
+figure {
+	padding-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+}
