@@ -1,0 +1,20 @@
+
+figure {
+	padding-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+  zoom: 75%;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr {
+	display: inline-table;
+}
+
+td {
+	padding: 0 25%;
+}
