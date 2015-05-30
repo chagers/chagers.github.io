@@ -1,0 +1,59 @@
+body {
+    font-family: Helvetica; sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: Indigo;
+  color: Coral;
+}
+
+footer {
+  background-color: Coral;
+  text-align: center;
+  clear: both;
+  padding: 1px;
+  color: Indigo;
+}
+
+/*Tabs Example*/
+.tabs {
+  position: relative;
+  min-height: 350px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: AquaMarine;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: White;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+[type=radio]:checked ~ label {
+  background: Teal;
+  color: White;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
