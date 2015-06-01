@@ -1,176 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Git It Right!</title>
-    <style type="text/css"></style>
-    <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
-  </head>
-  <body>
-    <header>
-      <h1>Git it Right!</h1>
-    </header>
-    <main>
-      <div id ="about">
-        <p>A git guide for DBC Phase 0-ers</p>
-      </div>
-      
-      <div class="tabs">
-
-        <div class="tab">
-        <input type="radio" id="tab-1" name="tab-group-1" checked>
-        <label for="tab-1">Forking/Cloning</label>
-          <div class="content">
-            <p>Creating New Local Repository (Forking/Cloning)
-              <ol><b>Forking:</b><br><br>
-                <li>Navigate to DBC's repository that you need, click on the Fork button on the top right.</li><br>
-                <li>Remember to Enable Issues in your repository's settings so you can give/receive feedback from other students!</li><br>
-              </ol>
-              <ol><b>Cloning:</b><br><br>
-                <li>Go to your command line, find a place where you want to clone this repository. DO NOT clone it into another git repository. Scary things will happen!</li><br>
-                <li>Once in the directory where you want it cloned, type in: <code>$ git clone &lt;COPIED_URL&gt;</code></li><br>
-                <li>Hit enter and let it do its work. Now you've cloned the fork!</li>
-              </ol>
-            </p>
-            <p>
-              Here's a video of the <a href="http://www.youtube.com/watch?v=kRtvX25drNo">process</a>.
-            </p>
-          </div>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Git It Right!</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+    </head>
+    <h1>GIT IT RIGHT</h1>
+    <h3>A DBC Phase 0 Guide to Git and GitHub</h3>
+    <div class="pc-tab">
+    <input checked="checked" id="tab1" type="radio" name="pct" />
+    <input id="tab2" type="radio" name="pct" />
+    <input id="tab3" type="radio" name="pct" />
+    <input id="tab4" type="radio" name="pct" />
+    <input id="tab5" type="radio" name="pct" />
+      <nav>
+        <ul>
+          <li class="tab1">
+            <label for="tab1">Forking/Cloning</label>
+          </li>
+          <li class="tab2">
+            <label for="tab2">Setting Remotes</label>
+          </li>
+          <li class="tab3">
+            <label for="tab3">Fetching/Merging Changes</label>
+          </li>
+          <li class="tab4">
+            <label for="tab4">Pull Requests</label>
+          </li>
+          <li class="tab5">
+            <label for="tab5">Undoing A Merge</label>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <div class="tab1">
+          <h2>Forking/Cloning</h2>
+          <p>
+            <ol><b>Forking:</b><br><br>
+              <li>Navigate to DBC's repository that you need, click on the Fork button on the top right.</li><br>
+              <li>Remember to Enable Issues in your repository's settings so you can give/receive feedback from other students!</li><br>
+            </ol>
+          	<ol>
+              <b>Cloning:</b><br><br>
+              <li>Go to your command line, find a place where you want to clone this repository. DO NOT clone it into another git repository. Scary things will happen!</li><br>
+              <li>Once in the directory where you want it cloned, type in: <code>$ git clone &lt;COPIED_URL&gt;</code></li><br>
+              <li>Hit enter and let it do its work. Now you've cloned the fork!</li>
+            </ol>
+          </p>
+          <p>Watch a video instead:
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/kRtvX25drNo" frameborder="0" allowfullscreen></iframe>
+          </p>
         </div>
-
-        <div class="tab">
-          <input type="radio" id="tab-2" name="tab-group-1">
-          <label for="tab-2">Setting Remotes</label>
-          <div class="content">
-            <p>
-              After setting up your local repository, you'll need to configure Git to sync your fork with the cloned repository (remember, you can't push changes to the original DBC repo!).
-              <ol>
-                <li>Via your command line, navigate into the location of your cloned fork.</li><br>
-                <li>Type <code>$ git remote -v</code> to see your current configured remotes</li><br>
-                <li>To add a new remote, type <code>$ git remote add &lt;name&gt; &lt;url&gt;</code></li><br>
-                <li>Make sure your 'upstream' remote is set to DBC's repo so you can pull/fetch and merge new curriculum changes</li><br>
-                <li>Make sure your 'origin' remote is set to your GitHub forked repository</li><br>
-                <li>To verify that your new repositories are set up, type <code>$ git remote -v</code> again to check your remotes</li>
-              </ol>
-            </p>
-          </div>
+        <div class="tab2">
+          <h2>Setting Remotes</h2>
+          <p>
+	          After setting up your local repository, you'll need to configure Git to sync your fork with the cloned repository (remember, you can't push changes to the original DBC repo!).
+	          <ol>
+	            <li>Via your command line, navigate into the location of your cloned fork.</li><br>
+	            <li>Type <code>$ git remote -v</code> to see your current configured remotes</li><br>
+	            <li>To add a new remote, type <code>$ git remote add &lt;name&gt; &lt;url&gt;</code></li><br>
+	            <li>Make sure your 'upstream' remote is set to DBC's repo so you can pull/fetch and merge new curriculum changes</li><br>
+	            <li>Make sure your 'origin' remote is set to your GitHub forked repository</li><br>
+	            <li>To verify that your new repositories are set up, type <code>$ git remote -v</code> again to check your remotes</li>
+	          </ol>
+        	</p>
         </div>
-
-        <div class="tab">
-          <input type="radio" id="tab-3" name="tab-group-1">
-          <label for="tab-3">Fetching/Merging</label>
-          <div class="content">
-            <p>
-              <ol>
-                <li>
-                  Update local repository (on your computer) by fetching changes from DBC's repository.
-                </li><br>
-                <li>
-                  From your command line, navigate to the correct repository where you will be fetching changes to. (So, if it's the beginning of Unit 3, Week 8, make sure you navigate to: /phase-0-unit-3/week-8)
-                </li><br>
-                <li>
-                  Double check you have your remotes set up correctly by typing <code>$ git remote -v</code>. If you've got it set up right, you'll see the following: <br>(if you don't have it right, check out the Setting Remotes reference.
-                  <figure>
-                    <img src="images/git-remotes-ch.png" alt="Git Remotes">
-                  </figure>
-                </li><br>
-                <li>
-                  Fetch the changes from the upstream remote:
-                  <figure>
-                    <img src="images/git-fetch-upstream-ch.png" alt="Fetch Upstream">
-                  </figure>
-                </li><br>
-                <li>
-                  Merge the changes to your master branch:
-                  <figure>
-                    <img src="images/git-merge-upstream-ch.PNG" alt="Merge Upstream">
-                  </figure> 
-                </li><br>
-                <li>
-                  Commit changes:
-                  <figure>
-                    <img src="images/git-commit-ch.PNG" alt="Commit">
-                  </figure>
-                </li><br>
-                <li>
-                  Push changes to your GitHub repository:
-                  <figure>
-                    <img src="images/git-push-ch.PNG" alt="Push">
-                  </figure>
-                </li>
-              </ol>
-            </p>
-          </div>
+        <div class="tab3">
+          <h2>Fetching/Merging Changes</h2>
+          <p>
+	          <ol>
+	            <li>
+	              Update local repository (on your computer) by fetching changes from DBC's repository.
+	            </li><br>
+              <li>
+                From your command line, navigate to the correct repository where you will be fetching changes to. (So, if it's the beginning of Unit 3, Week 8, make sure you navigate to: /phase-0-unit-3/week-8)
+              </li><br>
+              <li>
+                Double check you have your remotes set up correctly by typing <code>$ git remote -v</code>. If you've got it set up right, you'll see the following: <br>(if you don't have it right, check out the Setting Remotes reference.
+                <figure>
+                  <img src="images/git-remotes-ch.png" alt="Git Remotes">
+                </figure>
+              </li><br>
+              <li>
+                Fetch the changes from the upstream remote:
+                <figure>
+                  <img src="images/git-fetch-upstream-ch.png" alt="Fetch Upstream">
+                </figure>
+              </li><br>
+              <li>
+                Merge the changes to your master branch:
+                <figure>
+                  <img src="images/git-merge-upstream-ch.PNG" alt="Merge Upstream">
+                </figure>
+              </li><br>
+              <li>
+                Commit changes:
+                <figure>
+                 <img src="images/git-commit-ch.PNG" alt="Commit">
+                </figure>
+              </li><br>
+              <li>
+                Push changes to your GitHub repository:
+                <figure>
+                 <img src="images/git-push-ch.PNG" alt="Push">
+                </figure>
+              </li>
+            </ol>
+          </p>
         </div>
-
-        <div class="tab">
-          <input type="radio" id="tab-4" name="tab-group-1">
-          <label for="tab-4">Pull Requests</label>
-          <div class="content">
-            <p>You'll want to use Pull Requests when collaborating on work and sending changes to a GitHub repository.</p>
-              <ol>
-                <li>Make a New Branch for the changes you're making (i.e. not master): <code>$ git co -b new-branch-name</code> (replace "new-branch-name" with the name of the branch you want)</li><br>
-                <li>Push your new branch to GitHub<br><code>$ git push origin new-branch-name</code></li><br>
-                <li>On GitHub, go to your fork, and click on 'Pull Request' in the gray nav bar</li><br>
-                <li>Hack the pull request URL: <i>https://github.com&lt;YOUR_USERNAME&gt;/phase-0-unit-1/compare/master...</i></li><br>
-                <li>Once you're on the correct branch ('base: master') you may want to put a comment in on what you changed, if not, just press "Create Pull Request"</li><br>
-                <li>Merge it, confirm it, delete the branch<br></li>
-              </ol>
-          </div>
+        <div class="tab4">
+          <h2>Pull Requests</h2>
+          <p>You'll want to use Pull Requests when collaborating on work and sending changes to a GitHub repository.</p>
+            <ol>
+              <li>Make a New Branch for the changes you're making (i.e. not master): <code>$ git co -b new-branch-name</code> (replace "new-branch-name" with the name of the branch you want)</li><br>
+              <li>Push your new branch to GitHub<br><code>$ git push origin new-branch-name</code></li><br>
+              <li>On GitHub, go to your fork, and click on 'Pull Request' in the gray nav bar</li><br>
+              <li>Hack the pull request URL: <i>https://github.com&lt;YOUR_USERNAME&gt;/phase-0-unit-1/compare/master...</i></li><br>
+              <li>Once you're on the correct branch ('base: master') you may want to put a comment in on what you changed, if not, just press "Create Pull Request"</li><br>
+              <li>Merge it, confirm it, delete the branch<br></li>
+            </ol>
         </div>
-
-        <div class="tab">
-          <input type="radio" id="tab-5" name="tab-group-1">
-          <label for="tab-5">Undo-ing a Merge</label>
-          <div class="content">
-            <p>
-              A merge conflict happens when two branches change the same file and try to merge them together.
-            </p>
-            <p>
-              You may either fix the conflict in the doc in question, or reset git to a commit prior to the merge conflict.
-            </p>
-            <p>Reset your commits:
-              <ol>
-                <li>Type in <code>$ git log</code> to check which commit is one prior to the merge conflict on the current branch. Then you can reset to that commit using:<br><code>$ git reset [commit_number]</code></li><br>
-                <li>To reset ALL commits on the branch, use:<br><code>$ git reset --merge ORIG_HEAD</code></li><br>
-                <li>To go back 5 commits, use:<br><code>$ git reset --hard HEAD~5</code></li>
-              </ol>
-            </p>
-            <p>Fix the Document:
+        <div class="tab5">
+          <h2>Undoing a Merge</h2>
+          <b>Merge Conflicts:</b>
+          <p>
+              A merge conflict happens when two branches change the same file and try to merge them together.  To fix them do the following:
               <ol>
                 <li>Type <code>$ git status</code> to see what is going on, then open the doc and see what a conflict looks like</li><br>
                 <li>You'll see some notation added to the doc that will look something like this:<figure><img src="images/merge-conf-doc.png" alt="Merge Conflict Doc"></figure></li><br>
                 <li>You will have to choose what you want to keep, some_code or other_code. Delete everything else ( ====, &lt;&lt;&lt; and &gt;&gt;&gt; ) that you do not need. Add and commit, merge conflict resolved!</li>
               </ol>
             </p>
-          </div>
+          <b>Undoing Merges by Resetting Commits:</b>
+            <p>
+              <ol>
+                <li>Type in <code>$ git log</code> to check which commit is one prior to the merge conflict on the current branch. Then you can reset to that commit using:<br><code>$ git reset [commit_number]</code></li><br>
+                <li>To reset ALL commits on the branch, use:<br><code>$ git reset --merge ORIG_HEAD</code></li><br>
+                <li>To go back 5 commits, use:<br><code>$ git reset --hard HEAD~5</code></li>
+              </ol>
+            </p>
         </div>
+      </section>
+    </div>
 
-        <div class="tab">
-          <input type="radio" id="tab-6" name="tab-group-1">
-          <label for="tab-6">Reference Sheet</label>
-          <div class="content">
-            <ul>
-              <li><code>$ git clone &lt;url&gt;</code></li>
-              <li><code>$ git init</code></li>
-              <li><code>$ git remote -v</code></li>
-              <li><code>$ git remote add &lt;name&gt; &lt;url&gt;</code></li>
-              <li><code>$ git fetch + git merge &nbsp;+ &lt;remote name&gt; &lt;your current branch&gt;</code></li>
-              <li><code>$ git pull + &lt;remote name&gt; &lt;your current branch&gt;</code></li>
-              <li><code>$ git co -b &lt;new-branch-name&gt;</code></li>
-              <li><code>$ git push origin &lt;new-branch-name&gt;</code></li>
-              <li><code>$ git log</code></li>
-              <li><code>$ git reset --merge ORIG_HEAD</code></li>
-            </ul>
-            <ul>
-              <li>Hacked URL: <i>https://github.com&lt;YOUR_USERNAME&gt;/phase-0-unit-1/compare/master...</i></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </main>
     <footer>
-      <h5>Christine and Lauryn 2015</h5>
+      by Lauryn and Christine 2015
     </footer>
-  </body>
-</html>
+
+	</html>

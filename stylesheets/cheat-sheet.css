@@ -1,59 +1,160 @@
-body {
-    font-family: Helvetica; sans-serif;
+
+
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
 }
 
-header {
-  text-align: center;
-  background-color: Indigo;
-  color: Coral;
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4,
+#tab5:checked ~ section .tab5 {
+  display: block;
 }
 
-footer {
-  background-color: Coral;
-  text-align: center;
-  clear: both;
-  padding: 1px;
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
   color: Indigo;
 }
 
-/*Tabs Example*/
-.tabs {
-  position: relative;
-  min-height: 350px; /* This part sucks */
-  clear: both;
-  margin: 25px 0;
+/* Visual Styles */
+
+$activeColor: #ffffff;
+$unactiveColor: #eeeeee;
+$unactiveHoverColor: #dddddd;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.tab {
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #ecf0f4;
+  font-family: 'Helvetica';
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 60px;
+  color: Indigo;
+  margin-bottom: 0px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+nav {
+  width: 30%;
   float: left;
+  margin-top: 40px;
 }
-.tab label {
-  background: AquaMarine;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-left: -1px;
-  position: relative;
-  left: 1px;
+
+section {
+  width: 70%;
+  float: right;
+  font-size: 14px;
+  line-height: 1em;
 }
-.tab [type=radio] {
-  display: none;
+
+img {
+  max-width: 500px;
 }
-.content {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  background: White;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  overflow: auto;
+
+.pc-tab {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      label {
+        font-family: 'Helvetica';
+        float: left;
+        padding: 15px 25px;
+        margin-top: 4px;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        background: $unactiveColor;
+        color: #444;
+        &:hover {
+          background: $unactiveHoverColor;
+        }
+        &:active {
+          background: $activeColor;
+        }
+      }
+      &:not(:last-child) label {
+         border-right-width: 0;
+      }
+    }
+  }
+
+section {
+    font-family: "Droid Serif";
+    clear: both;
+    div {
+      padding: 20px;
+      width: 100%;
+      border: 1px solid #ddd;
+      background: #fff;
+      line-height: .5em;
+      letter-spacing: 0.3px;
+      color: #444;
+      h2 {
+        margin: 0;
+        font-family: "Helvetica";
+        letter-spacing: 1px;
+        color: #34495e;
+      }
+    }
+  }
 }
-[type=radio]:checked ~ label {
-  background: Teal;
-  color: White;
-  border-bottom: 1px solid white;
-  z-index: 2;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3,
+#tab4:checked ~ nav .tab4,
+#tab5:checked ~ nav .tab5 {
+  label {
+    background: white;
+    color: #111;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $activeColor;
+      left: 0;
+      bottom: -1px;
+    }
+  }
 }
-[type=radio]:checked ~ label ~ .content {
-  z-index: 1;
+
+footer {
+  display: block;
+  clear: both;
+  padding-top: 50px;
+  font-size: 14px;
+  color: Indigo;
+  text-align: center;
 }
