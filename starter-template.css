@@ -1,0 +1,64 @@
+.navbar {
+	background-color: #005353;
+	border-color: #005353;
+}
+.navbar-brand  {
+	font-family: Pacifico;
+	color: #37A5A5;
+	font-size: 175%;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #005353;
+}
+
+a:link {
+	color: #37A5A5;
+}
+a:hover {
+	text-decoration: none;
+	font-style: italic;
+}
+a:visited {
+	color: #807462;
+}
+.starter-template {
+  padding: 75px 10px;
+  text-align: center;
+  /*color: #008584;*/
+  background-color: #DEDEDE;
+}
+/*figure {
+	position: relative;
+	float: left;
+	clear: both;
+}*/
+figure img {
+	min-height: 30%;
+	border-radius: 100px;
+}
+section {
+	clear: both;
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+nav ul li {
+	display: inline;
+	clear: none;
+	color: #000000;
+}
+nav {
+	text-align: center;
+	padding-top: .25em;
+	letter-spacing: .1em;
+}
+nav a:link {
+	color: #DEDEDE;
+}
+nav a:hover {
+
+}
+nav a:visited {
+	color: #DEDEDE;
+}
