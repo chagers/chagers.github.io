@@ -1,21 +1,20 @@
 					/*Generic*/
 html {
-    background: #F0F9F2;
-    color: #28230E;
+    background: #F5F5F5;
+    color: #030C22;
 }
 a:link {
 	text-decoration: none;
-	color: #B23318;
+	color: #008584;
 }
 a:visited {
-	color: #718A6B;
+	color: #9DBFAF;
 }
 a:hover {
 	font-style: italic;
 }
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
+	font-family: 'Lato', sans-serif;
 }
 h1 {
 	font-size: 200%;
@@ -27,22 +26,23 @@ h2 {
 					/*Main Content*/
 .anchor {
     font-family: 'Pacifico', Georgia, sans-serif;
-    font-size: 4em;
+    font-size: 3.5em;
     padding-bottom: .25em;
 }
 .anchor a:link {
     text-decoration: none;
-    color: #28230E;
+    color: #008584;
 }
 .anchor a:visited {
     text-decoration: none;
-    color: #734B1A;
+    color: #008584;
 }
 .anchor a:hover {
     font-style: italic;
 }
+
 .about figure, .blurb {
-    display: inline-block;
+    display: inline;
 }
 
 .blurb {
@@ -57,24 +57,30 @@ h2 {
 
 #line {
 	width: 100%;
-  	height: 4px;
-  	background: #718A6B;
-  	clear: both;
-  	margin-top: 15px;
-  	margin-bottom: 12px;
+	height: 4px;
+	background: #404749;
+	clear: both;
+	margin-top: 15px;
+	margin-bottom: 12px;
 }
-
 
 table.projects {
 	width: 700px;
 	top: 500px;
 	margin-bottom: 2em;
+	background-color: Teal;
+}
+td figure {
+	height: -50%;
 }
 aside {
 	position: absolute;
-	top: 500px;
+	display: inline-block;
+	float: right;
+	/*top: 500px;*/
 	left: 800px;
-	width: 250px;
+	width: 25%;
+	background-color: AquaMarine;
 }
 .blog h2 a:link{
 	color: #28230E;
@@ -94,12 +100,29 @@ nav {
 	text-align: center;
 	padding-top: .25em;
 	letter-spacing: .1em;
+	color: #030C22;
+}
+a:link {
+	color: #008584;	
+}
+a:visited {
+	color: #008584;
 }
 #line2 {
 	width: 100%;
-  	height: 4px;
-  	background: #B23318;
-  	clear: both;
-  	margin-top: 15px;
-  	margin-bottom: 12px;	
+	height: 4px;
+	background: #95040B;
+	clear: both;
+	margin-top: 15px;
+	margin-bottom: 12px;	
 }
+
+
+			/*Tests*/
+/*.about {	
+	background-color: Red;
+}
+
+.about nav {
+	text-align: left;
+}*/
