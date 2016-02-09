@@ -1,96 +1,165 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>christine.hager = chagers</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>christine.hager</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image" href="./images/favicon.ico">
   </head>
 
-
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">chagers</a>
+    <header>
+      <div class="photo-container">
+        <a name="top"></a>
+        <div class="cover-inset">
+          <p class="name">Christine Hager</p>
+          <p class="thin">Hi, I'm Christine and I'm a Web Developer in Seattle, WA.</p>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Blog</a></li>
-            <li><a href="#contact">Projects</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </nav>
-
-    <div class="container">
-
-      <div class="starter-template">
-        
-        <h1>Christine Hager</h1><br><br>
-
-        <p>Hi, I'm Christine and I'm from Seattle, WA.</p><br>
-        <p>I've just started the adventure of learning to code and this is my first attempt at a website.</p><br>
-        <p>Welcome!</p><br>
-        <!-- <figure><img src="images/thumbnail-bw.jpeg" alt="ch picture"></figure> -->
-        <section>
-          <p>Get in touch:</p>
-          <span class="glyphicon glyphicon-envelope"></span>
-          <a href="mailto:cehager@gmail.com">cehager@gmail.com</a> | <img src="images/In-Black-14px.png"> <a href="http://linkedin.com/in/christinehager">LinkedIn</a> | <img src="images/Twitter_logo_blue.png"> <a href="http://twitter.com/cehager">Twitter</a> | <img src="images/GitHub-Mark-15px.png"> <a href="http://github.com/chagers">GitHub</a>
+      <nav>
+        <div class="nav-wrapper container thin">
+            <a href="#" class="right logo">chagers</a>
+            <ul class="left">
+              <li><a href="#projects-anchor">Projects</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container center">
+        <section class="personal-photos">
+          <div class="row">
+            <div class="col l4 m4 s4">
+              <img class="circle responsive-img" src="images/sunglasses.jpg">
+            </div>
+            <div class="col l4 m4 s4">
+              <img class="circle responsive-img" src="images/profresh.jpg">
+            </div>
+            <div class="col l4 m4 s4">
+              <img class="circle responsive-img" src="images/wedding.jpg">
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <p class="links">Get in touch:
+            <i class="tiny material-icons"> email</i><a href="mailto:cehager@gmail.com"> cehager@gmail.com</a>
+            |
+            <img class="logos" src="images/linkedin.png"><a target="_blank" href="http://linkedin.com/in/christinehager"> linkedin</a>
+            |
+            <img class="logos" src="images/twitter.png"><a target="_blank" href="http://twitter.com/cehager"> twitter</a>
+            |
+            <img class="logos" src="images/github2.png"> <a target="_blank" href="http://github.com/chagers"> github</a>
+          </p>
+          <a id="nav-arrow" class="btn-floating btn-small waves-effect waves-light" href="#projects-anchor"><i class="material-icons nav-arrow">navigation</i></a>
+        </section>
+        <section class="projects thin">
+          <a name="projects-anchor"></a>
+          <h3 class="thin project-title">Projects</h3>
+          <div class="row">
+            <div class="col l6 left left-align">
+              <h4 class="thin"><a href="http://hashography.herokuapp.com/" target="_blank">hashography</a></h4>
+              <h5>Web Application</h5>
+              <p>Hashography visualizes how users are tweeting about certain words in real time, around the world. Written entirely in Javascript, it utilizes the Twitter and Google Maps API, Node.js, and Socket.io.</p>
+              <ul>
+                <li>- 8 day final student project completed at Dev Bootcamp</li>
+                <li>- Completed using the Agile methodology</li>
+                <li>- Deployed to Heroku</li>
+                </ul>
+            </div>
+            <div class="col l6 right">
+              <a target="_blank" href="http://hashography.herokuapp.com/"><img class="responsive-img" src="images/hashography_screenshot.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 right right-align">
+              <h4 class="thin"><a href="http://coffeeandtea-game.herokuapp.com/" target="_blank">coffee&tea</a></h4>
+              <h5>Web Game</h5>
+              <p>Word game adapted as a web application. Built with Javascript, Node.js, and MaterializeCSS.</p>
+              <ul>
+                <li>- Over the weekend student project</li>
+                <li>- Deployed to Heroku</li>
+              </ul>
+            </div>
+            <div class="col l6 left">
+              <a target="_blank" href="http://coffeeandtea-game.herokuapp.com/"><img class="responsive-img" src="images/coffee_tea_screenshot.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 left left-align">
+              <h4 class="thin"><a href="http://northrimcountrystore.com/" target="_blank">North Rim Country Store</a></h4>
+              <h5>Website Refresh</h5>
+              <p>Small country store at the North Rim of the Grand Canyon. Their existing website needed a refresh, to streamline, simplify, and lighten up the current design.</p>
+              <ul>
+                <li>- Designed with the Joomla CMS framework, and hosted on HostGator</li>
+              </ul>
+            </div>
+            <div class="col l6 right">
+              <a href="http://northrimcountrystore.com/" target="_blank"><img class="responsive-img" src="images/nrcs_screenshot.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 right right-align">
+              <h4 class="thin"><a href="http://blooming-forest.herokuapp.com/" target="_blank">BloomingForest</a></h4>
+              <h5>Web Application</h5>
+              <p>Polling app designed to allow users to view polls by category and vote on them, as well as create anonymous polls. Launched using Sinatra, PostreSQL, and the Highcharts API.</p>
+              <ul>
+                <li>- 2 day student project, designed as an introduction to making a fully functioning web app</li>
+                <li>- Deployed to Heroku</li>
+              </ul>
+            </div>
+            <div class="col l6 left">
+              <a href="http://blooming-forest.herokuapp.com/" target="_blank"><img class="responsive-img" src="images/blooming_forest_screenshot.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 left left-align">
+              <h4 class="thin"><a href="http://frozen-sierra-7515.herokuapp.com/" target="_blank">GameShelf</a></h4>
+              <h5>Web Application</h5>
+              <p>An application designed to manage one’s board game collection providing support for friend lists (as well as listing what games friends own), game search, and game information pages with comment support. Built with Materialize, Rails, and PostgreSQL.</p>
+              <ul>
+                <li>- 3 day student project, designed as an introduction to working for a 'client'</li>
+                <li>- First employ of the Agile methodology to complete a group project</li>
+                <li>- Deployed to Heroku</li>
+              </ul>
+            </div>
+            <div class="col l6 right">
+              <a href="http://frozen-sierra-7515.herokuapp.com/" target="_blank"><img class="responsive-img" src="images/gameshelf_screenshot.png"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 right right-align">
+              <h4 class="thin"><a href="http://chagers.github.io/cheat-sheet.html" target="_blank">Git Cheat Sheet</a></h4>
+              <h5>Web Reference Guide</h5>
+              <p>Online git quick reference guide. Written with HTML5 and CSS3.</p>
+              <ul class="list-right">
+                <li>- Student project completed in remote collaboration via Hangouts sessions.</li>
+                <li>- Introductory web design collaboration project.</li>
+              </ul>
+            </div>
+            <div class="col l6 left">
+              <a href="http://chagers.github.io/cheat-sheet.html" target="_blank"><img class="responsive-img" src="images/git_it_screenshot.png"></a>
+            </div>
+          </div>
         </section>
       </div>
-      <footer>
-        <nav> <!--update with correct links when pages done-->
-          <ul>
-            <li>|</li>
-            <li><a href="http://chagers.github.io">home</a></li>
-            <li>|</li>
-            <li><a href="http://chagers.github.io/blog-index.html">blog</a></li>
-            <li>|</li>
-            <li><a href="http://chagers.github.io/cheat-sheet.html" target="_blank">cheat sheet</a></li>
-            <li>|</li>
-          </ul>
-        </nav>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
-
-</body></html>
+    </main>
+    <footer class="page-footer thin">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
+            <ul class="center-align">
+              <li><a href="#top">top</a></li>
+              <!-- <li><a href="http://chagers.github.io/blog-index.html">blog</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+  </body>
+</html>

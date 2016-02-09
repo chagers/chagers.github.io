@@ -1,2 +1,8 @@
 # chagers.github.io
-My DBC Phase 0 website
+By Christine Hager
+> Project Portfolio
+
+## Technologies Used
+* HTML5
+* CSS3
+* MaterializeCSS
