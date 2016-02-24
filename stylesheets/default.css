@@ -6,12 +6,7 @@ html {
 a {
 	color: #00BCD4 !important;
 }
-.projects a {
-	color: #007888 !important;
-}
-.projects a:hover {
-	font-style: italic;
-}
+
 
 /* HEADER */
 header {
@@ -50,7 +45,7 @@ nav {
 
 /* CONTACT */
 .personal-photos {
-	padding-top: 1em;
+	padding-top: 1.5em;
 }
 .logos {
 	height: 13px;
@@ -73,6 +68,12 @@ nav {
 }
 
 /* PROJECTS */
+.projects a {
+	color: #007888 !important;
+}
+.projects a:hover {
+	font-style: italic;
+}
 .project-title {
 	padding-bottom: 2em;
 }
