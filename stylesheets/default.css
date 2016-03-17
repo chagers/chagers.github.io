@@ -3,8 +3,8 @@ html {
 	background-color: #E6E6E6;
 	font-weight: 400;
 }
-a {
-	color: #00BCD4 !important;
+nav ul a {
+	color: #00BCD4;
 }
 
 
@@ -13,17 +13,17 @@ header {
 	color: #F5F5F5;
 }
 nav {
-	background-color: #042029 !important;
+	background-color: #042029;
 }
 .logo {
-	color:#00BCD4 !important;
+	color:#00BCD4;
 	font-size: 2.1rem;
 }
 .photo-container {
 	width: 100%;
 	height: 18em;
 	background-image: url("../images/cover_photo.jpg");
-	background-size: 20em;
+	background-size: 18.3em;
   background-repeat: repeat-x;
 }
 .cover-inset {
@@ -58,7 +58,7 @@ nav {
 	padding-bottom: 10%;
 }
 #nav-arrow {
-	background-color: #00BCD4 !important;
+	background-color: #00BCD4;
 	margin-top: 1em;
 }
 .nav-arrow {
@@ -69,7 +69,7 @@ nav {
 
 /* PROJECTS */
 .projects a {
-	color: #007888 !important;
+	color: #007888;
 }
 .projects a:hover {
 	font-style: italic;
@@ -87,8 +87,8 @@ img {
 }
 
 /* FOOTER */
-.page-footer {
-	background-color: #E6E6E6 !important;
+footer.page-footer {
+	background-color: #E6E6E6;
 }
 footer ul li {
 	display: inline-block;
