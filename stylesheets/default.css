@@ -60,6 +60,9 @@ nav {
 .links {
 	padding-bottom: 10%;
 }
+.links span {
+	color: #00BCD4;
+}
 #nav-arrow {
 	background-color: #00BCD4;
 	margin-top: 1em;
